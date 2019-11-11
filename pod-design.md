@@ -7,3 +7,7 @@
 * Understand Deployments and how to perform rolling updates
 * Understand Deployments and how to perform rollbacks
 * Understand Jobs and CronJobs
+
+## Questions
+
+### TBD
