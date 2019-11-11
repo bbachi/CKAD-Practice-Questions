@@ -25,3 +25,6 @@ This repo contains all the consolidated list of questions based on the DCA study
 3. [Exam Study Guide](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_V1.15.0.pdf)
 4. [How to install and get started with kubernetes](https://medium.com/bb-tutorials-and-thoughts/how-to-get-started-with-kubernetes-e06ea82d23b)
 
+
+## Other Certifications
+* [Docker Certified Associate](https://github.com/bbachi/DCA-Practice-Questions)
