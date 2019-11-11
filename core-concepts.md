@@ -12,6 +12,7 @@
 
 ```
 kubectl get namespaces
+
 kubectl get ns
 ```
 </p>
@@ -59,6 +60,7 @@ kubectl get pods -o=jsonpath="{.items[*]['metadata.name', 'metadata.namespace']}
 ```
 // creating a pod
 kubectl run nginx --image=nginx --restart=Never
+
 // List the pod
 kubectl get po
 ```
@@ -89,6 +91,7 @@ spec:
   dnsPolicy: ClusterFirst
   restartPolicy: Never
 status: {}
+
 // create a pod 
 kubectl create -f nginx-pod.yaml
 ```
@@ -131,6 +134,7 @@ kubectl describe pod nginx
 
 ```
 kubectl delete po nginx
+
 kubectl delete -f nginx-pod.yaml
 ```
 </p>
@@ -162,9 +166,12 @@ kubectl run nginx --image=nginx:1.17.4 --restart=Never --port=80
 
 ```
 kubectl set image pod/nginx nginx=nginx:1.15-alpine
+
 kubectl describe po nginx
+
 // another way it will open vi editor and change the version
 kubeclt edit po nginx
+
 kubectl describe po nginx
 ```
 </p>
@@ -176,7 +183,9 @@ kubectl describe po nginx
 
 ```
 kubectl set image pod/nginx nginx=nginx:1.17.1
+
 kubectl describe po nginx
+
 kubectl get po nginx -w # watch it
 ```
 </p>
@@ -199,6 +208,7 @@ kubectl get po nginx -o jsonpath='{.spec.containers[].image}{"\n"}'
 ```
 // creating a pod
 kubectl run nginx --image=nginx --restart=Never
+
 // exec into the pod
 kubectl exec -it nginx /bin/sh
 ```
@@ -220,6 +230,7 @@ kubectl get po nginx -o wide
 
 ```
 kubectl run busybox --image=busybox --restart=Never -- ls
+
 kubectl logs busybox
 ```
 </p>
@@ -251,6 +262,7 @@ kubectl run busybox --image=busybox --restart=Never -- /bin/sh -c "sleep 3600"
 
 ```
 kubectl get po nginx -o wide
+
 // check the connection
 kubectl exec -it busybox -- wget -o- <IP Address>
 ```
@@ -263,6 +275,7 @@ kubectl exec -it busybox -- wget -o- <IP Address>
 
 ```
 kubectl run busybox --image=nginx --restart=Never -it -- echo "How are you"
+
 kubectl delete po busybox
 ```
 </p>
@@ -286,6 +299,7 @@ kubectl run busybox --image=nginx --restart=Never -it --rm -- echo "How are you"
 ```
 // create a pod
 kubectl run nginx --image=nginx --restart=Never --port=80
+
 // List the pod with different verbosity
 kubectl get po nginx --v=7
 kubectl get po nginx --v=8
