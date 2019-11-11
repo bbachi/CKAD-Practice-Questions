@@ -10,10 +10,17 @@ This repo contains all the consolidated list of questions based on the DCA study
 
 
 ## Table of Contents:
-1. Core Concepts (13%)
-2. Multi-Container Pods (10%)
-3. Pod Design (20%)
-4. State Persistence (8%)
-5. Configuration (18%)
-6. Observability (18%)
-7. Services and Networking (13%)
+1. [Core Concepts (13%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/core-concepts.md)
+2. [Multi-Container Pods (10%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/multi-container-pod.md)
+3. [Pod Design (20%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/pod-design.md)
+4. [State Persistence (8%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/state-persistence.md)
+5. [Configuration (18%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/configuration.md)
+6. [Observability (18%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/observability.md)
+7. [Services and Networking (13%)](https://github.com/bbachi/CKAD-Practice-Questions/blob/master/services-and-networking.md)
+
+
+## Other Important Links
+1. [All You Need To Know About The Exam]()
+2. [Practice Questions](https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552)
+3. [Exam Study Guide](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_V1.15.0.pdf)
+
