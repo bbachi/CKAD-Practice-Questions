@@ -6,3 +6,7 @@
 * Understand Container Logging
 * Understand how to monitor applications in kubernetes
 * Understand Debugging in Kubernetes
+
+## Questions
+
+### TBD
