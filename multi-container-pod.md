@@ -56,15 +56,6 @@ kubectl get po busybox
 ```
 </p>
 </details>
-
-<details><summary></summary>
-  <p>
-   
-   ```
-   
-   ```
-   </p>
-   </details>
    
 <details><summary>Check the logs of each container that you just created</summary>
 <p>
