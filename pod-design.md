@@ -362,7 +362,7 @@ kubectl rollout status deploy webapp
 </details>
 
 
-<details><summary>Get the resultset that created with this deployment</summary>
+<details><summary>Get the replicaset that created with this deployment</summary>
 <p>
    
 ```
@@ -372,7 +372,7 @@ kubectl get rs -l app=webapp
 </details>
 
 
-<details><summary>Get the yaml of the resultset and pods of this deployment</summary>
+<details><summary>Get the yaml of the replicaset and pods of this deployment</summary>
 <p>
    
 ```
