@@ -10,8 +10,6 @@
 
 ## Questions
 
-### TBD
-
 <details><summary>Get the pods with label information</summary>
 <p>
    
