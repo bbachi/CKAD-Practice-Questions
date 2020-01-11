@@ -12,15 +12,31 @@
 <p>
 
 ```
-kubectl run nginx --image=nginx --restart=Never --port=80 --dry-run -o yaml > nginx.yaml
+kubectl run nginx --image=nginx --restart=Never --port=80 --expose --dry-run -o yaml > nginx.yaml
 
 // edit the label app: my-nginx and create the pod
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: nginx
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+status:
+  loadBalancer: {}
+---
+---
 apiVersion: v1
 kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    app: my-nginx
+    run: nginx
   name: nginx
 spec:
   containers:
