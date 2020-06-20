@@ -274,7 +274,7 @@ kubectl exec -it busybox -- wget -o- <IP Address>
 <p>
 
 ```
-kubectl run busybox --image=nginx --restart=Never -it -- echo "How are you"
+kubectl run busybox --image=busybox --restart=Never -it -- echo "How are you"
 
 kubectl delete po busybox
 ```
