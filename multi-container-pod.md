@@ -148,7 +148,7 @@ kubectl get po multi-cont-pod
 </details>
 
 
-<details><summary>Exec into both containers and verify that main.txt exist and query the main.txt from sidecar container with curl localhost</summary>
+<details><summary>Exec into both containers and verify that index.html exist and query the index.html from sidecar container with curl localhost</summary>
 <p>
    
 ```
