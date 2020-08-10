@@ -113,12 +113,9 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: multi-cont-pod
-  name: multi-cont-pod
+    run: main
+  name: main
 spec:
-  volumes:
-  - name: var-logs
-    emptyDir: {}
   containers:
   - image: busybox
     command: ["/bin/sh"]
@@ -134,11 +131,17 @@ spec:
     ports:
       - containerPort: 80
     volumeMounts:
-    - name: var-logs
+    - name: nginx-home
       mountPath: /usr/share/nginx/html
+  volumes:
+  - name: nginx-home
+    emptyDir: {}
+  - name: var-logs
+    emptyDir: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Never
 status: {}
+
 
 kubectl create -f multi-container.yaml
 
