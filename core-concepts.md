@@ -61,6 +61,10 @@ kubectl get pods -o=jsonpath="{.items[*]['metadata.name', 'metadata.namespace']}
 // creating a pod
 kubectl run nginx --image=nginx --restart=Never
 
+//Or using generator
+kubectl run nginx --image=nginx --generator=run-pod/v1
+
+
 // List the pod
 kubectl get po
 ```
@@ -333,7 +337,7 @@ kubectl get pods --sort-by=.metadata.name
 <p>
 
 ```
-kubectl get pods--sort-by=.metadata.creationTimestamp
+kubectl get pods --sort-by=.metadata.creationTimestamp
 ```
 </p>
 </details>
