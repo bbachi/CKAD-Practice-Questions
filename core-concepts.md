@@ -23,6 +23,8 @@ kubectl get ns
 
 ```
 kubectl get po --all-namespaces
+
+kubectl get po -A
 ```
 </p>
 </details>
