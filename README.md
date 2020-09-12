@@ -24,6 +24,7 @@ This repo contains all the consolidated list of questions based on the DCA study
 2. [Practice Questions](https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552)
 3. [Exam Study Guide](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_V1.15.0.pdf)
 4. [How to install and get started with kubernetes](https://medium.com/bb-tutorials-and-thoughts/how-to-get-started-with-kubernetes-e06ea82d23b)
+5. [More CKAD Practice Questions](https://dev.to/liptanbiswas/ckad-practice-questions-4mpn)
 
 
 ## Other Certifications
