@@ -80,7 +80,7 @@ status: {}
 kubectl create -f nginx-pod.yaml
 
 // verify
-kubectl describe pod nginx | grep -i readiness
+kubectl describe pod nginx | grep -i liveness
 kubectl delete po nginx
 ```
 </p>
