@@ -161,7 +161,7 @@ spec:
       valueFrom:
         configMapKeyRef:
           name: envcfgmap
-          key: environment
+          key: var1
   dnsPolicy: ClusterFirst
   restartPolicy: Never
 status: {}
