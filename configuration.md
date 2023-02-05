@@ -76,7 +76,7 @@ cat config.txt
 <p>
    
 ```
-kubectl create cm keyvalcfgmap --from-file=config.txt
+kubectl create cm keyvalcfgmap --from-env-file=config.txt
 
 kubectl get cm keyvalcfgmap -o yaml
 ```
