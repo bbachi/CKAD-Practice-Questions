@@ -130,7 +130,7 @@ echo var1=val1 > file.env
 cat file.env
 
 kubectl create cm envcfgmap --from-env-file=file.env
-kubectl get cm envcfgmap -o yaml --export
+kubectl get cm envcfgmap -o yaml
 ```
 </p>
 </details>
