@@ -306,7 +306,7 @@ id // you can see container securityContext overides the Pod level
 </details>
 
 
-<details><summary>Create pod with an nginx image and configure the pod with capabilities NET_ADMIN and SYS_TIME verify the capabilities</summary>
+<details><summary>Create pod with an nginx image and configure the container with capabilities NET_ADMIN and SYS_TIME verify the capabilities</summary>
 <p>
    
 ```
